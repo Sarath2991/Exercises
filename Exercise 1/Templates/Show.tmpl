@@ -1,0 +1,18 @@
+{{ define "Show" }}
+    <table border="1">
+      <thead>
+      <tr>
+        <td>Word</td>
+        <td>Count</td>
+      </tr>
+       </thead>
+       <tbody>
+    {{ range . }}
+      <tr>
+        <td>{{ .Key }}</td>
+        <td> {{ .Value }} </td>
+      </tr>
+    {{ end }}
+       </tbody>
+    </table>
+{{ end }}

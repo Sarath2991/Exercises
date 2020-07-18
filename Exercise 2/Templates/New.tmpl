@@ -1,0 +1,10 @@
+{{ define "New" }}
+  {{ template "Header" }}  
+    <form method="POST" action="show">
+      <label>Column to start </label><input type="text" name="start" /><br />
+      <label>No of rows      </label><input type="text" name="rows" /><br />
+      <label>No of columns   </label><input type="text" name="columns" /><br />
+      <input type="submit" value="Enter" />
+    </form>
+  {{ template "Footer" }}
+{{ end }}

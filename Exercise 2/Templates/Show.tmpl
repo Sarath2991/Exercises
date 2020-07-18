@@ -1,0 +1,11 @@
+{{ define "Show" }}
+    <table border="1">
+       <tbody>    
+      <tr>    
+        {{ range . }}  
+        <td>{{ . }}</td> 
+        {{ end }}       
+      </tr>    
+       </tbody>
+    </table>
+{{ end }}
